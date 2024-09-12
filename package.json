@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon server.js",
     "start": "NODE_ENV=production node dist/bundle.cjs",
-     "build": "npm install --legacy-peer-deps && webpack --config webpack.config.js"
+    "build": "npm install --legacy-peer-deps && webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
