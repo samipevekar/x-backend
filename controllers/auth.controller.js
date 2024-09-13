@@ -111,7 +111,7 @@ export const logout = async (req, res) => {
         // Clear the JWT cookie with the same options as when it was set
         res.clearCookie("jwt", {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
+            secure: true,
             sameSite: "None", 
         });
         
