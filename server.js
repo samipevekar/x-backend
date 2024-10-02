@@ -40,7 +40,8 @@ app.use(cors(corsConfig));
 app.use(compression());
 
 app.use(express.json({ limit: "20mb" })); // to parse req.body
-app.use(express.urlencoded({ extended: true })); // to parse form data
+app.use(express.urlencoded({ extended: true })); // d to parse form data  
+
 
 app.use(cookieParser());
 
