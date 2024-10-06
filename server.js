@@ -13,6 +13,7 @@ import userRoutes from './routes/user.route.js';
 import postRoutes from './routes/post.route.js';
 import notificationRoutes from './routes/notification.route.js';
 import storyRoutes from "./routes/story.route.js";
+import chatRoutes from "./routes/ai.route.js"
 
 import Story from './models/story.model.js'; // Import Story model
 import axios from 'axios';
@@ -54,6 +55,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/story", storyRoutes);
+app.use("/api/ai", chatRoutes)
 
 cron.schedule('*/4 * * * *', async () => {
     try {
